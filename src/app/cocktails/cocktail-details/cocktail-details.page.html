@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/cocktails"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{ cocktail?.strDrink }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="cocktail?.strDrinkThumb" alt="Cocktail Image"></ion-img>
+    <ion-card-content>
+      <ion-card-title>{{ cocktail?.strDrink }}</ion-card-title>
+      <p>{{ cocktail?.strCategory }}</p>
+      <p>{{ cocktail?.strInstructions }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
